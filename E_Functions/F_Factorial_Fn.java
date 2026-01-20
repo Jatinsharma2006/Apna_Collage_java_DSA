@@ -1,0 +1,25 @@
+
+import java.util.*;
+public class E_Factorial_Fn{
+
+        public static int factorial_fn(int num)
+        {
+                int f = 1;
+                for(int i=1; i<=num ;i++) {
+                        f=f*i;
+                }
+                return f;
+        }
+
+    
+        public static void main (String args[])
+        {
+                Scanner sc=new Scanner(System.in);
+                System.out.print("Enter A : ");
+                int a =sc.nextInt();
+              
+                System.out.print(factorial_fn(a));
+        }
+
+
+}
