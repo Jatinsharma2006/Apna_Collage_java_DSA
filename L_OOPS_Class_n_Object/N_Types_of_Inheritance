@@ -1,0 +1,140 @@
+
+            Type of Inheritance
+
+--> Single level Inheritance
+
+--> Multi level Inheritance
+
+--> Hierarchial Inheritance
+
+--> Hybrid Inheritance
+
+
+
+
+
+
+
+1) Single Level inheritance
+
+            +------------+
+            | Base Class |             
+            +------------+
+                  |
+                  |
+                  |
+                  V
+           +---------------+                    
+           | Derived Class |                         
+           +---------------+  
+
+Ex:     Animal (eats() , Breaths()  )
+          |  
+          V
+        fish ( swim() )    
+
+Fish class can call functions inside Animal class as it inherits it
+Previous code is example of single level inheritance       
+
+
+
+
+
+
+
+2) Multi Level inheritance
+
+            +------------+
+            | Base Class |             
+            +------------+
+                  |
+                  V
+           +---------------+                    
+           | Derived Class |                         
+           +---------------+ 
+                   |
+                   V
+           +---------------+                    
+           | Derived Class |                         
+           +---------------+
+
+Ex:     Animal (color , eats() , Breaths()  )
+          |  
+          V
+        Mammals ( legs ) 
+          |  
+          V
+         Dog ( Breed )    
+
+     
+
+
+
+
+
+3) Hierarchial Inheritance
+
+.                         +------------+
+.                         | Base Class |             
+.                         +------------+
+.                        /              \
+.                       /                \
+.                      /                  \
+.     +---------------+                    +---------------+
+.     | Derived Class |                    | Derived Class | 
+.     +---------------+                    +---------------+ 
+                 
+
+Ex:                         Animal [ color,eats(),Breaths() ]
+.                              | 
+.                              |
+.                      ---------------------
+.                     /         |           \
+.                    /          |            \
+.                   /           |             \
+.               Fish           Bird            Mammals
+.              Swim()          Fly()            Walk()
+         
+
+
+
+
+
+4) Hybrid Inheritance
+
+Ex:                         Animal [ color,eats(),Breaths() ]
+.                                | 
+.                                |
+.                      ---------------------
+.                     /          |           \
+.                    /           |            \
+.                   /            |             \
+.               Fish           Bird            Mammals
+.              Swim()          Fly()            Walk()
+.                                |           /    |    \
+.                                |          /     |     \
+.                                |        Dog    Cat   Human
+.                                v
+.                              Peacock
+
+
+
+
+
+5) Multiple inheritance
+
+There is 1 more type of interitance ---- "Multiple inheritance"
+
+It cannot be directly implemented in java , in c++ can be implemented directly inside classes 
+
+In java it is implemented indirectly through "Interfaces" 
+
+.     +---------------+                    +---------------+
+.     |   Base Class  |                    |   Base  Class | 
+.     +---------------+                    +---------------+ 
+.                      \                  / 
+.                       \                /
+.                        \              /                      
+.                      +-----------------+
+.                      | Derived Class   | 
+.                      +-----------------+ 

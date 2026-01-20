@@ -1,0 +1,110 @@
+.                           Interfaces
+
+Interfaces is a blueprint of a class
+
+         blueprint   ---->   blueprint   ----> Obj
+        (InterFaces)          (Class)
+
+for Interfaces we use  : "implements" keyword
+
+    Interfaces             Class
+        |                    |
+        V                    V
+    Implements             extends
+
+Ex
+.                Car [wheels, speed, engine]       (Interface)
+.                               |
+.                               |
+.                               V
+.                           Maruti 800              (Class)
+.                         /     |      \
+.                        /      |       \
+.                       /       |        \
+.                  Car1        Car2      Car3
+.                  M800        M800       M800
+.                 (obj-1)     (obj-2)    (obj-3)
+
+
+
+
+
+-->     In an interface, All methods are public + abstract by default
+
+
+-->     Used to achieve total abstraction
+        They have no body (without implementation)
+        Only method names are visible
+
+
+-->      Variables in the interface are final, public & static”
+
+.                                              public
+
+.                                              static
+
+.                                              final
+
+        Even if you don’t write them.
+
+        
+                Meaning of static : Variable that is created only once”
+                                One copy shared by all classes
+                                Belongs to interface, not object
+
+
+
+
+                Meaning of final : A variable whose assigned value will remain same”
+                                Value cannot be changed
+                                It becomes a constant
+
+
+
+-->     Interfaces help us to allow "Multiple inheritance"
+
+        Interfaces A    Interfaces B
+             \            /
+              \          /  
+               \        /  
+                \      / 
+                class C
+
+        class C implements A, B
+
+/*
+Golden rule (very important)
+
+Reference type decides which methods you can call
+Object type decides which method runs */
+
+
+
+Real-world interface examples (important conceptually)
+
+
+Example 1: Payment system
+
+                interface Payment {
+                void pay();
+                }
+
+                class UPI implements Payment {
+                public void pay() { }
+                }
+
+                class CreditCard implements Payment {
+                public void pay() { }
+                }
+
+
+Example 2: Device drivers
+
+                interface USB {
+                        void connect();
+                }
+
+                class Keyboard implements USB { }
+                class Mouse implements USB { }
+
+

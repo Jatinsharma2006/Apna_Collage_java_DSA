@@ -1,0 +1,77 @@
+
+✔ Interface
+
+--->Methods have only function name
+    No method body/fn logic inside
+    Methods/fn are abstract by default
+
+--->Variables in interfaces are public static final by default 
+    thier value cannot be changed once set in interface
+    
+
+            interface A {
+                int x = 10;
+
+                void display();
+
+                int area(){        //Error fn cannot have body
+                    return x*x;
+                }
+            }
+
+x is public static final which means class that implements
+A interface cannot  chnage value of x and cannot have a variable
+of int datatype with name x inside
+
+
+--->Inheritance
+    Interface → multiple allowed  ,  class C implements A, D
+
+
+
+
+
+
+✔ Abstract class
+
+--->Can have abstract methods (fn with only name)
+
+--->Can have non-abstract methods (fn with name , body / logic)
+
+--->Variable are normal their value can be changed in child class          
+            
+            abstract class B {
+                int x = 10;
+
+                abstract void display();
+
+                int area(){        
+                    return x*x;
+                }
+
+
+            }
+
+--->Inheritance
+    Abstract class → only one    class C extends B
+
+
+
+
+
+
+
+🧠 Simplest final version (corrected)
+
+Interface contains only abstract methods and constants, and supports multiple inheritance.
+Abstract class can contain both abstract and concrete methods, normal variables, and supports single inheritance.
+
+🏁 One-line memory trick
+
+Interface = only rules
+Abstract class = rules + shared code
+
+
+
+
+

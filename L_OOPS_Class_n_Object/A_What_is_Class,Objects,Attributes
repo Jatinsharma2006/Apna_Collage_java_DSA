@@ -1,0 +1,61 @@
+Object Oriented programming
+
+
+
+CLASSES AND OBJECTS
+
+Objects : entities in real world
+
+Classes: group of these entities.
+
+.     ------->    attributes (properties)
+.   /
+Class                     +
+.   \
+.     -------->   Functions (behaviour)
+.
+Ex:
+
+
+
+.          ------->    attributes---> colour (String value init)
+.        /
+Class Pen                     +
+.        \
+.          -------->         Fn's---> Change color()  
+.                                       //This fn's chnage string value of color attribute 
+
+ 
+
+Class               Attribute               functions
+
+Pen             Color: (String blue)       Set Color();
+                
+.                Tip:    5(int)             Set Tip();
+
+.                                       //These fn's chnage  value of their attribute 
+
+
+
+Points to remember:---
+
+-->  Class Name : Always starts with capital letters.
+.    Fn's 'Name :  Always starts with small letters
+.
+.            Class Name :--   Capital letter.
+.            Fn Name    :--   Small letter.
+.
+.            Ex: 
+.                public class OOPS{}
+.
+.                public class A_Class_Name{}                            
+
+
+--> When a java program is run it first looks for public class
+    then in public class looks main Fn's inside that public class
+
+
+--> Best Pratice to write them at top of other class & object
+
+.        Java Program ---->  public class ----->  main fn ()
+
