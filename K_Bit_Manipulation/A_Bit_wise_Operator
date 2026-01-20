@@ -1,0 +1,124 @@
+Bit Wise Operator
+
+-->  Binary and &
+-->  Binary or  |
+-->  Binary Xor ^
+-->  Binary One's complement ~
+-->  Binary Left Shift <<
+-->  Binary Right Shift >>
+
+
+
+
+LSB and MSB
+
+LSB: Least Significiant Bit  : last digit of the binaary number 
+
+MSB: Most Significiant Bit :  It is first digit of binaray number  
+it tell wheather a number is (Positive +ve) or (Negitive -ve)  
+if 0 then Positive if 1 then Negitive
+
+    Ex      0000 0000 1010
+
+    here first 0 of number repesents MSB and MSB is 0 so its positive Binarry Number 
+    and Last 0 represent LSB 
+    number is 0000 0000 1010 --  +10
+
+    Ex      1000 0000 1010
+
+    here first 1 of number repesents MSB and MSB is 1 so its Negetive Binarry Number 
+    and Last 0 represent LSB 
+    number is 1000 0000 1010 --  -10
+
+Ex:   0000 0000 0101  = +5 
+      1000 0000 0101  = -5 
+
+
+
+
+
+
+
+Binary and & : if both 1       result 1
+ex: 
+    5 & 6  
+    
+    5 = 101     6 = 110
+
+    1 & 1 -> 1
+    0 & 1 -> 0
+    1 & 0 -> 0     ==  100   
+
+    100 = 4 
+
+    so, 5 & 6 = 4
+
+
+
+
+Binary or | : if 1 of both is 1       result 1
+ex: 
+    5 | 6  
+    
+    5 = 101     6 = 110
+
+    1 | 1 -> 1
+    0 | 1 -> 1
+    1 | 0 -> 1     ==  111   
+
+    111 = 7
+
+    so, 5 | 6 = 7
+
+
+
+
+Binary Xor ^ : if both are same  result 0           0 ^ 0 -> 0
+                                                    0 ^ 1 -> 1
+                                                    1 ^ 0 -> 1 
+                                                    1 ^ 1 -> 0
+ex: 
+    5 | 6  
+    
+    5 = 101     6 = 110
+
+    1 ^ 1 -> 0
+    0 ^ 1 -> 1
+    1 ^ 0 -> 1     ==  011   
+
+    011 = 3
+
+    so, 5 ^ 6 = 3
+
+
+
+
+Binary One's complement ~ : change 1 to 0 and 0 to 1  
+ 
+~ 0 = 1
+~ 1 = 0
+
+Ex : 1010 = 10 
+      
+    ~ 1010 = 0101
+
+      0101 = 5
+
+Ex : 0000 = +0 
+      
+    ~ 0000 = 1111
+
+      1111 = -0
+
+
+      
+     
+Binary Two's complement ~ : find 1's complement then Add +1 to it
+
++5 find 2's complenet 
+
++5 = 0101  ----> 1's complenet = 1010
+           ----> Adding 1      = 1010 +1 = 1011
+
+
+           
